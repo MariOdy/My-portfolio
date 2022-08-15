@@ -1,0 +1,65 @@
+.BestSkills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.BestSkills img {
+  max-height: 455px;
+  max-width: 100%;
+}
+
+.BestSkills--info {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  align-items: flex-start;
+}
+.BestSkills--info h2 {
+  font-size: 30px;
+}
+.BestSkills--info p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 36px;
+}
+.info--percantage {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  width: 80%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  gap: 32px;
+  margin-bottom: 12px;
+}
+
+.info--percantage span {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .BestSkills {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+  .BestSkills--info {
+    align-items: center;
+    width: 80%;
+  }
+  .info--percantage {
+    gap: 20px;
+    font-size: 20px;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .BestSkills--info p {
+    margin-bottom: 12px;
+    text-align: center;
+  }
+}

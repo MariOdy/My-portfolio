@@ -1,0 +1,28 @@
+.Contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 20px;
+  margin-bottom: 40px;
+}
+.Contacts p {
+  width: 50%;
+  text-align: center;
+}
+.Contacts button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.Contacts img {
+  height: 475px;
+}
+
+@media (max-width: 640px) {
+  .Contacts p {
+    width: 100%;
+  }
+}
