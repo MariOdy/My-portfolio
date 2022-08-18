@@ -9,6 +9,7 @@ import WorkType from "./components/WorkType/WorkType";
 import Banner from "./components/Banner/Banner";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./Footer";
+import Projects from "./components/Projects/Projects";
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
       <WorkType />
       <CallToAction />
       <BestSkills />
+      <Projects />
       <Contacts />
       <Footer />
     </div>
