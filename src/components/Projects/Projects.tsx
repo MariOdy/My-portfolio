@@ -5,7 +5,7 @@ const Projects: React.FC = () => {
 
    return (
   <section className='Projects container'>
-    
+    {/* add projects  */}
   </section>
 
 )}
