@@ -15,11 +15,10 @@ const App: React.FC = () => {
     <div className="App">
       <Header />
       <Hero />
-      <CallToAction />
-      <BestSkills />
       <Banner />
       <WorkType />
       <CallToAction />
+      <BestSkills />
       <Contacts />
       <Footer />
     </div>
