@@ -29,3 +29,15 @@
 .projects-grid img:hover {
   transform: scale(1.02);
 }
+
+@media (max-width: 640px) {
+  .Projects {
+    align-items: center;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 4px 16px;
+  }
+}
