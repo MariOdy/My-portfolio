@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
     <div className="container Header">
-      <h1>Mariia Odynska.</h1>
+      <Link to='/' className="logo-name">Mariia Odynska.</Link>
       <a href="/">
         <svg
           width="24"

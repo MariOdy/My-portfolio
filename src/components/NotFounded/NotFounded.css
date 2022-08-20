@@ -41,3 +41,16 @@
 .NotFounded img {
   max-width: 50%;
 }
+
+@media (max-width: 640px) {
+  .NotFounded {
+    flex-direction: column;
+    padding: 4px 10px;
+  }
+  .NotFounded-info {
+    align-items: center;
+  }
+  .NotFounded img {
+    max-width: 100%;
+  }
+}

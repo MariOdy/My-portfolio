@@ -6,10 +6,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.Header h1 {
+.Header .logo-name {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 .Header svg {
   height: 20px;
