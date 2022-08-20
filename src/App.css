@@ -1,3 +1,6 @@
+.App{
+  position: relative;
+}
 .Header {
   display: flex;
   justify-content: space-between;
@@ -37,6 +40,8 @@
   font-size: 14px;
   font-weight: 200;
 }
+
+
 
 @media (max-width: 640px) {
   .Header h1 {
