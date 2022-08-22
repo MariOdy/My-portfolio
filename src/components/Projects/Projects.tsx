@@ -1,5 +1,4 @@
 import React from "react";
-import "./Projects.css";
 import { ProjectsGrid, ProjectsWrapper } from "./styles";
 
 const Projects: React.FC = () => {

@@ -1,10 +1,10 @@
 import React from "react";
-import "./WorkType.css";
+import { WorkTypeBlocks, WorkTypeLeftBlock, WorkTypeWrapper } from "./styles";
 
 const WorkType: React.FC = () => {
   return (
-    <div className="WorkType container">
-      <div className="WorkType-leftblock">
+    <WorkTypeWrapper>
+      <WorkTypeLeftBlock>
         <h2>Work Types</h2>
         <h3>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
@@ -12,7 +12,7 @@ const WorkType: React.FC = () => {
           explicabo modi officiis quidem soluta nesciunt minima facilis
           inventore praesentium quas illo aliquam molestiae quibusdam?
         </h3>
-        <div className="WorkType--blocks">
+        <WorkTypeBlocks>
           <div>
             <img src="https://www.svgrepo.com/show/373669/html.svg" alt="" />
           </div>
@@ -43,10 +43,10 @@ const WorkType: React.FC = () => {
           <div>
             <img src="https://www.svgrepo.com/show/354987/figma.svg" alt="" />
           </div>
-        </div>
-      </div>
+        </WorkTypeBlocks>
+      </WorkTypeLeftBlock>
       <img src="./images/chair-worker.png" alt=""></img>
-    </div>
+    </WorkTypeWrapper>
   );
 };
 
