@@ -37,7 +37,7 @@ export const HeaderWrapper = styled(Container)`
 `;
 
 export const Logo = styled(Link)`
-  font-size: 30px;
+  font-size: 30px !important;
   font-weight: 700;
   letter-spacing: 0.5px;
   cursor: pointer;
