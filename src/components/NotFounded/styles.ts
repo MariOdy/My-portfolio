@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Container } from "../../Container.styled";
 
-export const NotFoundedWrapper = styled.div`
+export const NotFoundedWrapper = styled(Container)`
   display: flex;
   justify-content: center;
   align-items: center;

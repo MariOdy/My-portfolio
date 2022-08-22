@@ -8,7 +8,7 @@ const NotFounded: React.FC = () => {
   return (
     <section>
       <Header />
-      <NotFoundedWrapper className="container">
+      <NotFoundedWrapper>
         <img src="./images/notfounded.png" alt="" />
         <NotFoundedInfo>
           <p>This page doesn't exist</p>
