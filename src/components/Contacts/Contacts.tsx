@@ -1,10 +1,10 @@
 import React from "react";
-import "./Contacts.css";
 import Resume from "../buttons/Resume";
+import { ContactsWrapper } from "./styles";
 
 const Contacts: React.FC = () => {
   return (
-    <section className="Contacts container">
+    <ContactsWrapper>
       <h2>Get in touch with us!</h2>
       <p>
         Whether you want to learn about UX or need product design services let
@@ -12,7 +12,7 @@ const Contacts: React.FC = () => {
       </p>
       <Resume />
       <img src="./images/contacts.png" alt="" />
-    </section>
+    </ContactsWrapper>
   );
 };
 

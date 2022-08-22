@@ -1,5 +1,8 @@
-.Contacts {
-  display: flex;
+import styled from "styled-components";
+import { Container } from "../../Container.styled";
+
+export const ContactsWrapper = styled(Container)`
+display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -7,22 +10,22 @@
 
   padding: 12px 20px;
   margin-bottom: 40px;
-}
-.Contacts p {
+
+  p {
   width: 50%;
   text-align: center;
 }
-.Contacts button {
+
+button {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
-.Contacts img {
+img {
   height: 475px;
 }
 
 @media (max-width: 640px) {
-  .Contacts p {
+   p {
     width: 100%;
   }
-}
+`;
