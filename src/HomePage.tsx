@@ -1,5 +1,5 @@
-import React from 'react';
-import Header from "./Header";
+import React from "react";
+import Header from "./Header/Header";
 import Hero from "./components/Hero/Hero";
 import CallToAction from "./components/CallToAction/CallToAction";
 import BestSkills from "./components/BestSkills/BestSkills";
@@ -10,20 +10,19 @@ import Footer from "./Footer";
 import Projects from "./components/Projects/Projects";
 
 const HomePage: React.FC = () => {
-
-   return (
-  <>
-        <Header />
-        <Hero />
-        <Banner />
-        <WorkType />
-        <CallToAction />
-        <BestSkills />
-        <Projects />
-        <Contacts />
-        <Footer />
-  </>
-
-)}
+  return (
+    <>
+      <Header />
+      <Hero />
+      <Banner />
+      <WorkType />
+      <CallToAction />
+      <BestSkills />
+      <Projects />
+      <Contacts />
+      <Footer />
+    </>
+  );
+};
 
 export default HomePage;
