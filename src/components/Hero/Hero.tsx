@@ -1,23 +1,28 @@
 import React from "react";
-import "./Hero.css";
+
 import Resume from "../buttons/Resume";
+import { BubblesBackground } from "../BubblesBg";
+import { HeroImgWrapper, HeroInfoWrapper, HeroWrapper } from "./styles";
 
 const Hero: React.FC = () => {
   return (
-    <section className="Hero container" id="anim-bg">
-      <div className="Hero--info">
+    <HeroWrapper>
+      <BubblesBackground />
+      <HeroInfoWrapper>
         <div>
-          Hello, I'm
+          Gorgeous Websites
           <br />
-          Mariia Odynska
-          <br />
-          <span>Frontend Developer</span>
+          Made just right ❤️
         </div>
+        <p>
+          I'm a 24 years old React / Typescript Front-end developer from Ukraine
+        </p>
         <Resume />
-      </div>
-
-      <img src="./images/desk-worker.png" alt="" className="Hero--img" />
-    </section>
+      </HeroInfoWrapper>
+      <HeroImgWrapper>
+        <img src="./images/desk-worker.png" alt="" />
+      </HeroImgWrapper>
+    </HeroWrapper>
   );
 };
 

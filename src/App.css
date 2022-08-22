@@ -1,29 +1,6 @@
 .App{
   position: relative;
 }
-.Header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.Header .logo-name {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-}
-.Header svg {
-  height: 20px;
-}
-
-.Header a {
-  display: flex;
-  gap: 6px;
-  font-size: 18px;
-}
-.Header a:hover {
-  color: #ee8315;
-}
 
 .Footer {
   height: 20px;
@@ -44,15 +21,4 @@
 
 
 
-@media (max-width: 640px) {
-  .Header h1 {
-    font-size: 24px;
-  }
 
-  .Header span {
-    display: none;
-  }
-  .Header svg {
-    height: 24px;
-  }
-}
