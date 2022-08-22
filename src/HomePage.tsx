@@ -6,7 +6,7 @@ import BestSkills from "./components/BestSkills/BestSkills";
 import WorkType from "./components/WorkType/WorkType";
 import Banner from "./components/Banner/Banner";
 import Contacts from "./components/Contacts/Contacts";
-import Footer from "./Footer";
+import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 
 const HomePage: React.FC = () => {

@@ -1,6 +1,4 @@
 import React from "react";
-import "./App.css";
-
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFounded from "./components/NotFounded/NotFounded";
@@ -10,10 +8,9 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <BrowserRouter>
-
         <Routes>
-          <Route path="/" element={<HomePage/>}/>
-          <Route path="*" element={<NotFounded/>} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="*" element={<NotFounded />} />
         </Routes>
       </BrowserRouter>
     </div>
