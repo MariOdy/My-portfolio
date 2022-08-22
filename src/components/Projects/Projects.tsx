@@ -1,13 +1,12 @@
 import React from "react";
 import "./Projects.css";
-
-
+import { ProjectsGrid, ProjectsWrapper } from "./styles";
 
 const Projects: React.FC = () => {
   return (
-    <section className="Projects container">
+    <ProjectsWrapper>
       <h2>Projects</h2>
-      <div className="projects-grid">
+      <ProjectsGrid>
         <a href="https://quizzical-swart.vercel.app/">
           <img src="./images/quizical.png" alt="" />
         </a>
@@ -20,8 +19,8 @@ const Projects: React.FC = () => {
         <a href="/">
           <img src="./images/coming.png" alt="" />
         </a>
-      </div>
-    </section>
+      </ProjectsGrid>
+    </ProjectsWrapper>
   );
 };
 
