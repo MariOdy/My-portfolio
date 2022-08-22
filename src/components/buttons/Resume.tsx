@@ -1,11 +1,8 @@
 import React from "react";
-import "./buttons.css";
+import { SolidButton } from "./styles";
+
 const Resume: React.FC = () => {
-  return (
-    <div className="resume-btn">
-      <button>Download resume</button>
-    </div>
-  );
+  return <SolidButton>Download resume</SolidButton>;
 };
 
 export default Resume;
