@@ -1,21 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { NotFoundedInfo, NotFoundedWrapper } from "./styles";
+
 import Header from "../../Header";
-import "./NotFounded.css";
 
 const NotFounded: React.FC = () => {
   return (
     <section>
       <Header />
-      <div className="NotFounded container">
+      <NotFoundedWrapper className="container">
         <img src="./images/notfounded.png" alt="" />
-        <div className="NotFounded-info">
+        <NotFoundedInfo>
           <p>This page doesn't exist</p>
           <Link to="/" className="go-back">
             Go back
           </Link>
-        </div>
-      </div>
+        </NotFoundedInfo>
+      </NotFoundedWrapper>
     </section>
   );
 };
