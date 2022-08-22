@@ -1,16 +1,16 @@
 import React from "react";
-import "./CallToAction.css";
+import { CallToActionInfo, CallToActionWrapper, CTLEmail } from "./styles";
 
 const CallToAction: React.FC = () => {
   return (
-    <div className="CallToAction container">
-      <div className="CallToAction--info">
+    <CallToActionWrapper>
+      <CallToActionInfo>
         <h2>Email</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit consequuntur
         </p>
-      </div>
-      <form className="CTL--email">
+      </CallToActionInfo>
+      <CTLEmail>
         <input type="email" name="email" placeholder="Enter Your mail"></input>
         <button type="submit">
           <img
@@ -18,8 +18,8 @@ const CallToAction: React.FC = () => {
             src="https://www.svgrepo.com/show/179364/send-paper.svg"
           ></img>
         </button>
-      </form>
-    </div>
+      </CTLEmail>
+    </CallToActionWrapper>
   );
 };
 
