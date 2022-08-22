@@ -63,11 +63,11 @@ export const WorkTypeBlocks = styled.div`
     justify-content: center;
     align-items: center;
     gap: 8px;
-  }
 
-  > div > img {
-    width: 45%;
-    height: 45%;
+    > img {
+      width: 45%;
+      height: 45%;
+    }
   }
 
   @media (max-width: 900px) {

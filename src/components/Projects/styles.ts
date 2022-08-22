@@ -33,10 +33,10 @@ export const ProjectsGrid = styled.div`
 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: all 0.2s ease-in-out;
-  }
 
-  img:hover {
-    transform: scale(1.02);
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   @media (max-width: 640px) {

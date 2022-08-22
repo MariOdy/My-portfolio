@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Container } from "../../Container.styled";
 
 export const ContactsWrapper = styled(Container)`
-display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -12,20 +12,21 @@ display: flex;
   margin-bottom: 40px;
 
   p {
-  width: 50%;
-  text-align: center;
-}
+    width: 50%;
+    text-align: center;
+  }
 
-button {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-img {
-  height: 475px;
-}
+  button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  img {
+    height: 475px;
+  }
 
-@media (max-width: 640px) {
-   p {
-    width: 100%;
+  @media (max-width: 640px) {
+    p {
+      width: 100%;
+    }
   }
 `;

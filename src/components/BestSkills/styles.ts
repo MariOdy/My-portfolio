@@ -13,10 +13,8 @@ export const BestSkillsWrapper = styled(Container)`
   }
 
   @media (max-width: 900px) {
-    .BestSkills {
-      flex-direction: column-reverse;
-      gap: 12px;
-    }
+    flex-direction: column-reverse;
+    gap: 12px;
   }
 `;
 
