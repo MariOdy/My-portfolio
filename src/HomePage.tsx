@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Header/Header";
+import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import CallToAction from "./components/CallToAction/CallToAction";
 import BestSkills from "./components/BestSkills/BestSkills";
