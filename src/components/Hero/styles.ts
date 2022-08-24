@@ -6,9 +6,8 @@ export const HeroWrapper = styled(Container)`
   justify-content: space-around;
   align-items: center;
 
-  border-radius: 16px;
   position: relative;
-  background-color: #ffdbb7;
+  background-color: #ccdaeb;
 
   @media (max-width: 640px) {
     flex-direction: column;
@@ -18,17 +17,17 @@ export const HeroWrapper = styled(Container)`
 export const HeroInfoWrapper = styled.div`
   z-index: 3;
 
-  flex: 1;
-  font-size: 50px;
+  flex: 1.3;
+  font-size: 60px;
   font-weight: 700;
   min-height: 455px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 
-  line-height: 55px;
+  line-height: 70px;
 
   img {
     width: 60px;
@@ -36,6 +35,7 @@ export const HeroInfoWrapper = styled.div`
   }
 
   p {
+    width: 80%;
     font-size: 20px;
     line-height: 24px;
     font-weight: 300;
@@ -49,4 +49,10 @@ export const HeroImgWrapper = styled.div`
   img {
     max-width: 100%;
   }
+`;
+
+export const HeroButtons = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
 `;

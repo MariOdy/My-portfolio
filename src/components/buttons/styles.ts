@@ -13,29 +13,26 @@ export const BaseButton = styled.button`
   font: inherit;
   box-shadow: none;
   appearance: none;
-  border-radius: 4px;
+  border-radius: 10px;
   user-select: none;
-  width: fit-content;
+  width: 155px;
+  height: 45px;
   > span {
     pointer-events: none;
   }
 `;
 
 export const SolidButton = styled(BaseButton)`
-  background-color: #ee8315;
-  font-size: 16px;
-  line-height: 1;
+  background-color: #ff4e79;
   font-weight: 400;
-  color: #ededed;
-  border: 2px solid transparent;
-  border-radius: 24px;
-  padding: 12px 16px;
+  font-size: 18px;
+  color: #ffffff;
+`;
 
-  &:hover,
-  &:focus-visible {
-    color: #ee8315;
-    background-color: #ffffff;
-    font-weight: 500;
-    border: 2px solid #ee8315;
-  }
+export const TransparentButton = styled(BaseButton)`
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ff4e79;
+  border: 1px solid #ff4e79;
 `;

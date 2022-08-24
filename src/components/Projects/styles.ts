@@ -5,15 +5,11 @@ export const ProjectsWrapper = styled(Container)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
   gap: 20px;
 
   padding: 0;
   margin-top: 75px;
-  margin-bottom: 75px;
-
-  h2 {
-    padding: 4px;
-  }
 
   @media (max-width: 640px) {
     align-items: center;

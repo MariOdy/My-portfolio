@@ -1,8 +1,8 @@
 import React from "react";
-import { SolidButton } from "./styles";
+import { TransparentButton } from "./styles";
 
 const Resume: React.FC = () => {
-  return <SolidButton>Download resume</SolidButton>;
+  return <TransparentButton>My Resume</TransparentButton>;
 };
 
 export default Resume;

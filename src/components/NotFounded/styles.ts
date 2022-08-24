@@ -20,17 +20,21 @@ export const NotFoundedWrapper = styled(Container)`
   padding: 4px 70px;
 
   & .go-back {
-    background-color: #545454;
-    padding: 8px 20px;
-    border-radius: 8px;
-    font-size: 26px;
-    color: rgb(242, 242, 242);
-    text-align: center;
-    max-width: 50%;
+    background-color: #ff4e79;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    width: 125px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    user-select: none;
   }
 
   & img {
-    max-width: 50%;
+    max-width: 40%;
   }
 
   @media (max-width: 640px) {

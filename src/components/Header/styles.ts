@@ -16,10 +16,6 @@ export const HeaderWrapper = styled(Container)`
     display: flex;
     gap: 6px;
     font-size: 18px;
-
-    &:hover {
-      color: #ee8315;
-    }
   }
 
   @media (max-width: 640px) {

@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { keyframes } from "styled-components"
+import { keyframes } from "styled-components";
 
 export const BubblesBackground: React.FC = () => (
   <Container className="bubblesWrapper">
@@ -12,8 +12,18 @@ export const BubblesBackground: React.FC = () => (
     <Bubble left="35%" size="150px" animationDelay="7s" />
     <Bubble left="40%" size="60px" animationDuration="18s" />
     <Bubble left="85%" size="150px" animationDuration="11s" />
-    <Bubble left="20%" size="15px" animationDelay="2s" animationDuration="35s" />
-    <Bubble left="50%" size="25px" animationDelay="15s" animationDuration="45s" />
+    <Bubble
+      left="20%"
+      size="15px"
+      animationDelay="2s"
+      animationDuration="35s"
+    />
+    <Bubble
+      left="50%"
+      size="25px"
+      animationDelay="15s"
+      animationDuration="45s"
+    />
   </Container>
 );
 
@@ -61,8 +71,10 @@ interface BubbleProps {
   animationDuration?: string;
 }
 const Bubble = styled(BubbleBase)<BubbleProps>`
-  ${({ animationDelay }) => animationDelay && `animation-delay: ${animationDelay};`}
-  ${({ animationDuration }) => animationDuration && `animation-duration: ${animationDuration};`}
+  ${({ animationDelay }) =>
+    animationDelay && `animation-delay: ${animationDelay};`}
+  ${({ animationDuration }) =>
+    animationDuration && `animation-duration: ${animationDuration};`}
   ${({ left }) => left && `left: ${left};`}
   ${({ size }) => size && `height: ${size}; width: ${size};`}
 `;

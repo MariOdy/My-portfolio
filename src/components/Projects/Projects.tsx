@@ -4,7 +4,7 @@ import { ProjectsGrid, ProjectsWrapper } from "./styles";
 const Projects: React.FC = () => {
   return (
     <ProjectsWrapper>
-      <h2>Projects</h2>
+      <h2>My projects</h2>
       <ProjectsGrid>
         <a href="https://quizzical-swart.vercel.app/">
           <img src="./images/quizical.png" alt="" />

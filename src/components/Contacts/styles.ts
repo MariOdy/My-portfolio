@@ -1,32 +1,38 @@
 import styled from "styled-components";
-import { Container } from "../../Container.styled";
 
-export const ContactsWrapper = styled(Container)`
+export const ContactsWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 12px;
+  text-align: right;
+  padding: 20px 40px;
 
-  padding: 12px 20px;
-  margin-bottom: 40px;
-
-  p {
-    width: 50%;
-    text-align: center;
-  }
-
-  button {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  img {
-    height: 475px;
-  }
+  background-color: #251a2d;
+  color: #ffff;
+  margin-top: 50px;
 
   @media (max-width: 640px) {
     p {
       width: 100%;
     }
   }
+`;
+
+export const ContactsImg = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 12px;
+  img {
+    max-width: 80%;
+  }
+`;
+export const ContactsInfo = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
 `;
