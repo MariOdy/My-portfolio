@@ -15,8 +15,8 @@ const Projects: React.FC = () => {
         <a href="https://meme-generator.mariody.vercel.app/">
           <img src="./images/memegenerator.png" alt="" />
         </a>
-        <a href="/">
-          <img src="./images/coming.png" alt="" />
+        <a href="https://weather.mariody.vercel.app/">
+          <img src="./images/weather-app.png" alt="" />
         </a>
       </ProjectsGrid>
     </ProjectsWrapper>
