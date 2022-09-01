@@ -6,6 +6,7 @@ import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import AboutMe from "./components/AboutMe/AboutMe";
+import { HireMeBanner } from "./components/HireMe/HireMe";
 
 const HomePage: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage: React.FC = () => {
       <Projects />
       <AboutMe />
       <WorkType />
+      <HireMeBanner />
       <Contacts />
       <Footer />
     </>
