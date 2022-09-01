@@ -19,7 +19,7 @@ import { Container } from "../../Container.styled";
 
 const Contacts: React.FC = () => {
   return (
-    <ContactsWrapper>
+    <ContactsWrapper id="contacts">
       <Container>
         <ContactsInfo>
           <h2>Mariia Odynska.</h2>
