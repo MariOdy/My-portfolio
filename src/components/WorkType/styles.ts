@@ -4,11 +4,18 @@ import { Container } from "../../Container.styled";
 export const WorkTypeWrapper = styled(Container)`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
   gap: 50px;
+  padding: 40px;
+  min-height: 575px;
+
+  background-image: url("./images/parallax.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (max-width: 900px) {
     flex-direction: column;
@@ -33,9 +40,14 @@ export const TypeCard = styled.div`
   padding: 8px 12px;
   border-radius: 8px;
 
-  background-color: #cbdaeb;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(5px);
 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 
   > div {
     display: flex;

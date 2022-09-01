@@ -7,7 +7,8 @@ export const AboutMeWrapper = styled(Container)`
   align-items: center;
 
   background-color: #ccdaeb;
-  margin: 50px auto;
+  margin: 30px auto;
+  margin-top: 70px ;
 `;
 
 export const AboutInfo = styled.div`
