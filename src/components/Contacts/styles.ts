@@ -58,6 +58,12 @@ export const ContactsInfo = styled.div`
 
   @media (max-width: 640px) {
     align-items: center;
+    h2 {
+      font-size: 32px;
+    }
+    h4 {
+      font-size: 14px;
+    }
   }
 `;
 
