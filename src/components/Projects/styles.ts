@@ -9,7 +9,8 @@ export const ProjectsWrapper = styled(Container)`
   gap: 20px;
 
   padding: 0;
-  margin-top: 75px;
+  margin-top: 50px;
+
 
   h2 {
     font-size: 26px;

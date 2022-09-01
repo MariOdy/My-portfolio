@@ -7,15 +7,17 @@ export const WorkTypeWrapper = styled(Container)`
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 50px;
-  padding: 40px;
-  min-height: 575px;
+  gap: 40px;
+  padding: 20px 40px;
+  min-height: 550px;
+  margin-top: 75px;
 
   background-image: url("./images/parallax.png");
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   @media (max-width: 900px) {
     flex-direction: column;
@@ -40,8 +42,8 @@ export const TypeCard = styled.div`
   padding: 8px 12px;
   border-radius: 8px;
 
-  background: rgba(255, 255, 255, 0.22);
-  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(4px);
 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 
