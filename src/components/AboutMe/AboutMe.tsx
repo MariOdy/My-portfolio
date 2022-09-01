@@ -3,7 +3,7 @@ import { AboutInfo, AboutMeWrapper, ImgWrapper } from "./styles";
 
 const AboutMe: React.FC = () => {
   return (
-    <AboutMeWrapper>
+    <AboutMeWrapper id='about-me'>
       <AboutInfo>
         <h3>About me</h3>
         <p>

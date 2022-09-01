@@ -8,7 +8,7 @@ export const AboutMeWrapper = styled(Container)`
 
   background-color: #ccdaeb;
   margin: 30px auto;
-  margin-top: 70px ;
+  margin-top: 70px;
 `;
 
 export const AboutInfo = styled.div`

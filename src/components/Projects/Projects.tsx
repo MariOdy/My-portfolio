@@ -3,7 +3,7 @@ import { ProjectsGrid, ProjectsWrapper } from "./styles";
 
 const Projects: React.FC = () => {
   return (
-    <ProjectsWrapper>
+    <ProjectsWrapper id='my-projects'>
       <h2>My projects</h2>
       <ProjectsGrid>
         <a href="https://quizzical-swart.vercel.app/">
