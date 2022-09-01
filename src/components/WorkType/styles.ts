@@ -2,6 +2,21 @@ import styled from "styled-components";
 import { Container } from "../../Container.styled";
 
 export const WorkTypeWrapper = styled(Container)`
+  margin-top: 75px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+
+  .parallax-banner {
+    border-radius: 16px;
+    z-index: 1;
+  }
+  .parallax-banner > div:nth-child(1) {
+    z-index: 0;
+  }
+`;
+
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,14 +25,8 @@ export const WorkTypeWrapper = styled(Container)`
   gap: 40px;
   padding: 20px 40px;
   min-height: 550px;
-  margin-top: 75px;
 
-  background-image: url("./images/parallax.png");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  position: relative;
 
   @media (max-width: 900px) {
     flex-direction: column;
@@ -32,6 +41,7 @@ export const Cards = styled.div`
   align-items: center;
   gap: 40px;
 `;
+
 export const TypeCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -42,7 +52,7 @@ export const TypeCard = styled.div`
   padding: 8px 12px;
   border-radius: 8px;
 
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4px);
 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;

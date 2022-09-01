@@ -10,11 +10,8 @@ const Contacts: React.FC = () => {
       </ContactsImg>
 
       <ContactsInfo>
-        <h2>Get in touch with us!</h2>
-        <p>
-          Whether you want to learn about UX or need product design services let
-          us help with your challenge.
-        </p>
+        <h2>Contacts</h2>
+        
         <Resume />
       </ContactsInfo>
     </ContactsWrapper>

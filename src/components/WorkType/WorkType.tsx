@@ -1,5 +1,6 @@
 import React from "react";
-import { Cards, TypeCard, WorkTypeWrapper } from "./styles";
+import { ParallaxBanner } from "react-scroll-parallax";
+import { WorkTypeWrapper, Content, Cards, TypeCard } from "./styles";
 
 import { HiCode } from "react-icons/hi";
 import { SiJavascript } from "react-icons/si";
@@ -49,15 +50,21 @@ const WorkTypeCard: React.FC<WorkTypeCardProps> = ({ type }) => {
   );
 };
 
+const layers = [{ image: "/images/parallax.png", speed: -25 }];
+
 const WorkType: React.FC = () => {
   return (
     <WorkTypeWrapper>
-      <h2>Things I love</h2>
-      <Cards>
-        {types.map((type) => (
-          <WorkTypeCard type={type} key={type.id} />
-        ))}
-      </Cards>
+      <ParallaxBanner layers={layers} className="parallax-banner">
+        <Content>
+          <h2>Things I love</h2>
+          <Cards>
+            {types.map((type) => (
+              <WorkTypeCard type={type} key={type.id} />
+            ))}
+          </Cards>
+        </Content>
+      </ParallaxBanner>
     </WorkTypeWrapper>
   );
 };

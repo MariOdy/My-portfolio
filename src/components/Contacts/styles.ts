@@ -5,8 +5,8 @@ export const ContactsWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  text-align: right;
-  padding: 20px 40px;
+  text-align: center;
+  padding: 40px;
 
   background-color: #251a2d;
   color: #ffff;
@@ -33,6 +33,6 @@ export const ContactsInfo = styled.div`
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   gap: 16px;
 `;
