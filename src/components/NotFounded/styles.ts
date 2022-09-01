@@ -1,15 +1,22 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
+
 import { Container } from "../../Container.styled";
+
+const bounceX = keyframes` from { left: 0; } to { left: calc(100% - 112px); }`;
+const bounceY = keyframes`from { top: 0; } to { top: calc(100% - 61.06px); }`;
+const bounceXMobile = keyframes` from { left: 0; } to { left: calc(100% - 80px); }`;
+const bounceYMobile = keyframes`from { top: 0; } to { top: calc(100% - 44.75px); }`;
 
 export const NotFoundedWrapper = styled(Container)`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
-  gap: 30px;
+  text-align: center;
+  max-height: 80vh;
+  height: 80vh;
+  position: relative;
 
-  background-image: url("/images/bg-404.png");
-  background-size: cover;
   border-radius: 8px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -17,13 +24,12 @@ export const NotFoundedWrapper = styled(Container)`
   font-size: 32px;
   font-weight: 200;
   color: #4f4f4f;
-  padding: 4px 70px;
 
   & .go-back {
-    background-color: #ff4e79;
-    font-weight: 400;
+    background-color: #cbdaeb;
+    font-weight: 300;
     font-size: 20px;
-    color: #ffffff;
+    color: #000000;
     width: 125px;
     height: 45px;
     display: flex;
@@ -35,6 +41,30 @@ export const NotFoundedWrapper = styled(Container)`
 
   & img {
     max-width: 40%;
+  }
+  & .bouncer {
+    display: block;
+    color: #000000;
+    position: absolute;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+    --x-time: 8.5s;
+    --y-time: 10.1s;
+    animation: ${bounceX} var(--x-time) linear 0s infinite alternate,
+      ${bounceY} var(--y-time) linear 0s infinite alternate;
+    width: 112px;
+    @media (max-width: 640px) {
+      --x-time: 4s;
+      --y-time: 6.3s;
+      animation: ${bounceXMobile} var(--x-time) linear 0s infinite alternate,
+        ${bounceYMobile} var(--y-time) linear 0s infinite alternate;
+      width: 80px;
+    }
+    & svg {
+      height: auto;
+      width: 100%;
+      color: #ff4e79;
+    }
   }
 
   @media (max-width: 640px) {
@@ -51,12 +81,12 @@ export const NotFoundedInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 24px;
-  font-family: "Montserrat", sans-serif;
   color: #545454;
+  font-size: 20px;
 
-  padding: 8px 12px;
+  z-index: 1;
 
   @media (max-width: 640px) {
     align-items: center;
