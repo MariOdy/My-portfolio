@@ -8,27 +8,8 @@ export const HeaderWrapper = styled(Container)`
   align-items: center;
   padding: 16px 20px;
 
-  svg {
-    height: 20px;
-  }
-
-  a {
-    display: flex;
-    gap: 6px;
-    font-size: 18px;
-  }
-
   @media (max-width: 640px) {
-    h1 {
-      font-size: 24px;
-    }
-
-    span {
-      display: none;
-    }
-    svg {
-      height: 24px;
-    }
+    justify-content: center;
   }
 `;
 

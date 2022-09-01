@@ -9,6 +9,12 @@ export const AboutMeWrapper = styled(Container)`
   background-color: #ccdaeb;
   margin: 30px auto;
   margin-top: 70px;
+
+  @media (max-width: 640px) {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 12px;
+  }
 `;
 
 export const AboutInfo = styled.div`
@@ -22,6 +28,13 @@ export const AboutInfo = styled.div`
   p {
     font-size: 20px;
     font-weight: 300;
+  }
+
+  @media (max-width: 640px) {
+    align-items: center;
+    p {
+      width: 110%;
+    }
   }
 `;
 

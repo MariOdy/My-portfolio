@@ -40,6 +40,10 @@ export const Cards = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 `;
 
 export const TypeCard = styled.div`

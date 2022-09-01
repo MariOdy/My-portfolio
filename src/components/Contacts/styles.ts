@@ -15,6 +15,7 @@ export const ContactsWrapper = styled.div`
   }
 
   @media (max-width: 640px) {
+    text-align: center;
     p {
       width: 100%;
     }
@@ -28,6 +29,10 @@ export const ContactsImg = styled.div`
   padding: 12px;
   img {
     max-width: 100%;
+  }
+
+  @media (max-width: 640px) {
+    display: none;
   }
 `;
 export const ContactsInfo = styled.div`
@@ -49,6 +54,10 @@ export const ContactsInfo = styled.div`
     font-weight: 200;
     margin-top: -20px;
     margin-bottom: 20px;
+  }
+
+  @media (max-width: 640px) {
+    align-items: center;
   }
 `;
 
@@ -78,5 +87,9 @@ export const Socials = styled.div`
   svg {
     width: 30px;
     height: 30px;
+  }
+
+  @media (max-width: 640px) {
+    justify-content: center;
   }
 `;
