@@ -8,16 +8,27 @@ export const AboutMeWrapper = styled(Container)`
 
   background-color: #ccdaeb;
   margin: 50px auto;
+`;
 
-  > div {
-    flex: 1;
+export const AboutInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  h3 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 300;
   }
 `;
 
 export const ImgWrapper = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+
   img {
     max-width: 50%;
     border-radius: 50%;
