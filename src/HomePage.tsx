@@ -6,18 +6,19 @@ import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import AboutMe from "./components/AboutMe/AboutMe";
 import { HireMeBanner } from "./components/HireMe/HireMe";
+import { Container } from "Container.styled";
 
 const HomePage: React.FC = () => {
   return (
     <>
       <Header />
-      <main>
+      <Container as="main">
         <Hero />
         <Projects />
         <AboutMe />
         <WorkType />
         <HireMeBanner />
-      </main>
+      </Container>
       <Footer />
     </>
   );

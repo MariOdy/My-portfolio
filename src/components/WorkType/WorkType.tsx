@@ -3,7 +3,6 @@ import { HiCode } from "react-icons/hi";
 import { SiJavascript } from "react-icons/si";
 import { FaPaintBrush } from "react-icons/fa";
 import { ParallaxBanner } from "react-scroll-parallax";
-import { Container } from "Container.styled";
 import { WorkTypeWrapper, Content, Cards, TypeCard } from "./styles";
 
 interface WorkTypeData {
@@ -54,20 +53,18 @@ const layers = [{ image: "/images/parallax.png", speed: -25 }];
 
 const WorkType: React.FC = () => {
   return (
-    <Container>
-      <WorkTypeWrapper id="work-types">
-        <ParallaxBanner layers={layers} className="parallax-banner">
-          <Content>
-            <h2>Things I love</h2>
-            <Cards>
-              {types.map((type) => (
-                <WorkTypeCard type={type} key={type.id} />
-              ))}
-            </Cards>
-          </Content>
-        </ParallaxBanner>
-      </WorkTypeWrapper>
-    </Container>
+    <WorkTypeWrapper id="work-types">
+      <ParallaxBanner layers={layers} className="parallax-banner">
+        <Content>
+          <h2>Things I love</h2>
+          <Cards>
+            {types.map((type) => (
+              <WorkTypeCard type={type} key={type.id} />
+            ))}
+          </Cards>
+        </Content>
+      </ParallaxBanner>
+    </WorkTypeWrapper>
   );
 };
 

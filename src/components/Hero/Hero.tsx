@@ -2,7 +2,6 @@ import React from "react";
 import Resume from "components/buttons/Resume";
 import { BubblesBackground } from "components/BubblesBg";
 import ContactMe from "components/buttons/ContactMe";
-import { Container } from "Container.styled";
 import {
   HeroButtons,
   HeroImgWrapper,
@@ -12,30 +11,27 @@ import {
 
 const Hero: React.FC = () => {
   return (
-    <Container>
-      <HeroWrapper>
-        <BubblesBackground />
-        <HeroInfoWrapper>
-          <div>
-            <span>Gorgeous Websites</span>
-            <span className="smart-code">Smart Code</span>
-            <br />
-            Made just right ❤️
-          </div>
-          <p>
-            I'm a 24 years old React / Typescript Front-end developer from
-            Ukraine
-          </p>
-          <HeroButtons>
-            <ContactMe />
-            <Resume />
-          </HeroButtons>
-        </HeroInfoWrapper>
-        <HeroImgWrapper>
-          <img src="./images/desk-worker.png" alt="" />
-        </HeroImgWrapper>
-      </HeroWrapper>
-    </Container>
+    <HeroWrapper>
+      <BubblesBackground />
+      <HeroInfoWrapper>
+        <div>
+          <span>Gorgeous Websites</span>
+          <span className="smart-code">Smart Code</span>
+          <br />
+          Made just right ❤️
+        </div>
+        <p>
+          I'm a 24 years old React / Typescript Front-end developer from Ukraine
+        </p>
+        <HeroButtons>
+          <ContactMe />
+          <Resume />
+        </HeroButtons>
+      </HeroInfoWrapper>
+      <HeroImgWrapper>
+        <img src="./images/desk-worker.png" alt="" />
+      </HeroImgWrapper>
+    </HeroWrapper>
   );
 };
 
