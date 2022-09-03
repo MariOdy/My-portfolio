@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Container } from "Container.styled";
+import { Container } from "components/Container";
 
 export const HeaderWrapper = styled(Container)`
   align-items: center;

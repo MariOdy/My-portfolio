@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { Container } from "Container.styled";
+import { Container } from "components/Container";
 
 const bounceX = keyframes` from { left: 0; } to { left: calc(100% - 112px); }`;
 const bounceY = keyframes`from { top: 0; } to { top: calc(100% - 61.06px); }`;

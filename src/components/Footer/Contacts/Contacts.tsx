@@ -14,7 +14,7 @@ import {
   BsLinkedin,
   BsTelegram,
 } from "react-icons/bs";
-import { Container } from "Container.styled";
+import { Container } from "components/Container";
 
 const Contacts: React.FC = () => {
   return (

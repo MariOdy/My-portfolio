@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SectionCard } from "../../Container.styled";
+import { SectionCard } from "components/SectionCard";
 
 export const ProjectsWrapper = styled(SectionCard)`
   display: flex;
