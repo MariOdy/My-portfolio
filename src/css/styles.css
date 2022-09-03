@@ -27,6 +27,10 @@ body {
   width: 100%;
 }
 
+main {
+  padding-bottom: 24px;
+}
+
 main > :first-child {
   margin-top: 0;
 }

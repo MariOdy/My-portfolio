@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Container } from "components/Container";
 
 export const HeaderWrapper = styled(Container)`
@@ -7,11 +7,6 @@ export const HeaderWrapper = styled(Container)`
   display: flex;
   justify-content: space-between;
   padding: 16px 0;
-
-  svg {
-    height: 30px;
-    width: 30px;
-  }
 `;
 
 export const Logo = styled(Link)`

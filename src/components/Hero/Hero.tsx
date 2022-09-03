@@ -22,7 +22,8 @@ const Hero: React.FC = () => {
           Made just right ❤️
         </Title>
         <Description>
-          I'm a 24 years old React / Typescript Front-end developer from Ukraine
+          Hey! My name is Mariia, I'm a 24 years old Front-end developer from
+          Ukraine
         </Description>
         <HeroButtons>
           <ContactMe />

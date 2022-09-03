@@ -48,7 +48,7 @@ const Container = styled.div`
   width: 100%;
   z-index: 0;
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
 `;
 
 const BubbleBase = styled.span`

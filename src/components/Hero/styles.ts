@@ -2,23 +2,17 @@ import styled from "styled-components";
 import { SectionCard } from "components/SectionCard";
 
 export const HeroWrapper = styled(SectionCard)`
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-
-  @media (max-width: 640px) {
-    flex-direction: column;
-    gap: 20px;
-  }
+  position: relative;
+  overflow: hidden;
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
   justify-content: center;
   min-height: 455px;
-  z-index: 3;
+  position: relative;
+  z-index: 2;
 
   @media (max-width: 640px) {
     min-height: 100%;
@@ -26,24 +20,20 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 60px;
+  font-size: clamp(28px, 6vw, 60px);
   font-weight: 700;
-
-  @media (max-width: 640px) {
-    font-size: 38px;
-    min-height: 100%;
-  }
+  margin-bottom: 16px;
 `;
 
 export const Description = styled.p`
   font-size: 20px;
   font-weight: 300;
-  width: 80%;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  max-width: 500px;
 
   @media (max-width: 640px) {
     font-size: 16px;
-    font-weight: 300;
-    width: 100%;
   }
 `;
 
@@ -54,8 +44,26 @@ export const HeroButtons = styled.div`
 `;
 
 export const HeroImg = styled.img`
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-  z-index: 3;
+  display: block;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 640px) {
+    margin-top: 24px;
+    height: auto;
+    width: 100%;
+  }
+
+  @media (min-width: 641px) {
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    left: max(520px, 100% - 540px);
+
+    object-position: left;
+
+    height: fill-available;
+    width: auto;
+  }
 `;
