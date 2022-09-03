@@ -12,6 +12,9 @@
 }
 
 body {
+  background-color: white;
+  color: #1f1f1f;
+
   overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
