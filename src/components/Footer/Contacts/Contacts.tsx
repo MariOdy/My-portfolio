@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "../buttons/Resume";
+import Resume from "components/buttons/Resume";
 import {
   ContactsImg,
   ContactsInfo,
@@ -10,12 +10,11 @@ import {
 } from "./styles";
 import {
   BsFacebook,
-  BsGithub,
   BsInstagram,
   BsLinkedin,
   BsTelegram,
 } from "react-icons/bs";
-import { Container } from "../../Container.styled";
+import { Container } from "Container.styled";
 
 const Contacts: React.FC = () => {
   return (
@@ -31,19 +30,28 @@ const Contacts: React.FC = () => {
           </Links>
           <Email>mariody.work@gmail.com</Email>
           <Socials>
-            <a href="https://www.linkedin.com/in/mariody/">
+            <a
+              href="https://www.linkedin.com/in/mariody/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsLinkedin />
             </a>
-            <a href="https://www.facebook.com/profile.php?id=100034116007528">
+            <a
+              href="https://www.facebook.com/profile.php?id=100034116007528"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsFacebook />
             </a>
-            <a href="https://instagram.com/just.tendril?igshid=YmMyMTA2M2Y=">
+            <a
+              href="https://instagram.com/just.tendril?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsInstagram />
             </a>
-            <a href="https://github.com/MariOdy">
-              <BsGithub />
-            </a>
-            <a href="https://t.me/Mari_ody">
+            <a href="https://t.me/Mari_ody" target="_blank" rel="noreferrer">
               <BsTelegram />
             </a>
           </Socials>

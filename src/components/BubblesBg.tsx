@@ -1,6 +1,5 @@
 import * as React from "react";
-import styled from "styled-components";
-import { keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const BubblesBackground: React.FC = () => (
   <Container className="bubblesWrapper">

@@ -1,19 +1,16 @@
 import styled from "styled-components";
-import { Container } from "../../Container.styled";
+import { SectionCard } from "Container.styled";
 
-export const AboutMeWrapper = styled(Container)`
+export const AboutMeWrapper = styled(SectionCard)`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
-  background-color: #ccdaeb;
-  margin: 30px auto;
   margin-top: 70px;
 
   @media (max-width: 640px) {
     flex-direction: column-reverse;
     text-align: center;
-    gap: 12px;
+    gap: 16px;
   }
 `;
 
@@ -21,7 +18,7 @@ export const AboutInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 16px;
+  gap: 6px;
   h3 {
     font-size: 26px;
   }
@@ -34,17 +31,21 @@ export const AboutInfo = styled.div`
     align-items: center;
     p {
       width: 110%;
+      font-size: 16px;
     }
   }
 `;
 
 export const ImgWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
   img {
-    max-width: 50%;
+    max-width: 60%;
     border-radius: 50%;
+  }
+  @media (max-width: 640px) {
+    justify-content: center;
   }
 `;

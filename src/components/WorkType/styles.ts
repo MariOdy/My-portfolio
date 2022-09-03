@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Container } from "../../Container.styled";
+import { SectionCard } from "Container.styled";
 
-export const WorkTypeWrapper = styled(Container)`
+export const WorkTypeWrapper = styled(SectionCard)`
   margin-top: 75px;
   padding: 0;
   position: relative;
@@ -43,6 +43,7 @@ export const Cards = styled.div`
 
   @media (max-width: 640px) {
     flex-direction: column;
+    gap: 12px;
   }
 `;
 
@@ -52,7 +53,7 @@ export const TypeCard = styled.div`
   justify-content: center;
   align-items: center;
   flex: 1;
-  min-height: 350px;
+  height: 350px;
   padding: 8px 12px;
   border-radius: 8px;
 
@@ -90,5 +91,10 @@ export const TypeCard = styled.div`
   p {
     font-size: 16px;
     font-weight: 300;
+  }
+
+  @media (max-width: 640px) {
+    height: 200px;
+    padding: 20px 12px;
   }
 `;

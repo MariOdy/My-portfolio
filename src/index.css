@@ -3,20 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-padding-top: 45px;
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Poppins", sans;
   background-color: rgb(255, 255, 255);
   color: #373737;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 h2 {
   font-size: 32px;
   font-weight: 700;
+}
+
+a,
+button {
+  cursor: pointer;
 }

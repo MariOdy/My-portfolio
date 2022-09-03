@@ -1,14 +1,15 @@
-import styled from "styled-components";
-import { keyframes } from "styled-components";
-import { Container } from "../../Container.styled";
+import styled, { keyframes } from "styled-components";
+import { SectionCard } from "Container.styled";
 
 const bounceX = keyframes` from { left: 0; } to { left: calc(100% - 112px); }`;
 const bounceY = keyframes`from { top: 0; } to { top: calc(100% - 61.06px); }`;
 const bounceXMobile = keyframes` from { left: 0; } to { left: calc(100% - 80px); }`;
 const bounceYMobile = keyframes`from { top: 0; } to { top: calc(100% - 44.75px); }`;
 
-export const Banner = styled(Container)`
+export const Banner = styled(SectionCard)`
   border-radius: 10px;
+  background-color: rgba(6, 95, 82, 0.5);
+
   color: #000000;
   display: flex;
   flex-direction: column;
@@ -24,12 +25,12 @@ export const Banner = styled(Container)`
   }
 
   img {
-    max-width: 200px;
+    max-width: 250px;
   }
   & h3 {
     font-size: 20px;
     font-weight: 600;
-    color: #ff4e79;
+    color: #ffaf66;
     margin: 0.4em auto;
     transition: color 0.2s ease;
     width: fit-content;
@@ -40,7 +41,7 @@ export const Banner = styled(Container)`
   & p {
     font-size: 14px;
     font-weight: 300;
-    color: #222;
+    color: #000000;
     line-height: 1.45;
     max-width: 520px;
     width: fit-content;
@@ -71,7 +72,7 @@ export const Banner = styled(Container)`
     & svg {
       height: auto;
       width: 100%;
-      color: #cbdaeb;
+      color: #000000;
     }
   }
   &:hover,

@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import { SectionCard } from "Container.styled";
 
-export const ContactsWrapper = styled.div`
+export const ContactsWrapper = styled(SectionCard)`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
+  border-radius: 0;
 
   background-color: #251a2d;
   color: rgba(255, 255, 255, 0.87);

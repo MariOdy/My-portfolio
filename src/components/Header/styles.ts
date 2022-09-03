@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Container } from "../../Container.styled";
+import { Container } from "Container.styled";
 
 export const HeaderWrapper = styled(Container)`
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 16px 20px;
+  padding: 16px 0;
 
-  @media (max-width: 640px) {
-    justify-content: center;
+  svg {
+    height: 30px;
+    width: 30px;
   }
 `;
 
 export const Logo = styled(Link)`
-  font-size: 30px !important;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.5px;
-  cursor: pointer;
 `;

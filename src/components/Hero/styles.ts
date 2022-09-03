@@ -1,16 +1,14 @@
 import styled from "styled-components";
-import { Container } from "../../Container.styled";
+import { SectionCard } from "Container.styled";
 
-export const HeroWrapper = styled(Container)`
+export const HeroWrapper = styled(SectionCard)`
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-  position: relative;
-  background-color: #ccdaeb;
-
   @media (max-width: 640px) {
     flex-direction: column;
+    gap: 20px;
   }
 `;
 
@@ -28,6 +26,9 @@ export const HeroInfoWrapper = styled.div`
   gap: 20px;
 
   line-height: 70px;
+  > div .smart-code {
+    display: none;
+  }
 
   img {
     width: 60px;
@@ -39,6 +40,26 @@ export const HeroInfoWrapper = styled.div`
     font-size: 20px;
     line-height: 24px;
     font-weight: 300;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 38px;
+    line-height: 45px;
+    min-height: 100%;
+
+    > div > span:nth-child(1) {
+      display: none;
+    }
+    > div .smart-code {
+      display: inline;
+    }
+
+    p {
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+    }
   }
 `;
 

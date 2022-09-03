@@ -1,24 +1,19 @@
 import styled from "styled-components";
-import { Container } from "../../Container.styled";
+import { SectionCard } from "../../Container.styled";
 
-export const ProjectsWrapper = styled(Container)`
+export const ProjectsWrapper = styled(SectionCard)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
+  background-color: transparent;
 
   padding: 0;
   margin-top: 50px;
 
-
   h2 {
     font-size: 26px;
-    padding: 0 30px;
-  }
-
-  @media (max-width: 640px) {
-    align-items: center;
   }
 `;
 
@@ -44,7 +39,6 @@ export const ProjectsGrid = styled.div`
   @media (max-width: 640px) {
     display: flex;
     flex-direction: column;
-    padding: 4px 16px;
     gap: 16px;
   }
 `;
