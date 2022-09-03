@@ -30,7 +30,7 @@ export const Description = styled.p`
   font-weight: 300;
   line-height: 1.5;
   margin-bottom: 24px;
-  max-width: 500px;
+  max-width: 472px;
 
   @media (max-width: 640px) {
     font-size: 16px;
@@ -59,7 +59,7 @@ export const HeroImg = styled.img`
     position: absolute;
     top: 40px;
     bottom: 40px;
-    left: max(520px, 100% - 540px);
+    left: max(min(524px, 60%), 100% - 540px);
 
     object-position: left;
 
