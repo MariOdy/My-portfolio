@@ -1,44 +1,49 @@
 import styled from "styled-components";
-import { SectionCard } from "components/SectionCard";
 
-export const ProjectsWrapper = styled(SectionCard)`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  background-color: transparent;
-
-  padding: 0;
+export const ProjectsWrapper = styled.section`
   margin-top: 50px;
+`;
 
-  h2 {
-    font-size: 26px;
+export const Header = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e7e9;
+  padding: 20px 0;
+  margin-bottom: 32px;
+`;
+
+export const Title = styled.h2`
+  font-size: 32px;
+`;
+
+export const Divider = styled.hr``;
+
+export const ProjectsGrid = styled.ul`
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  @media (max-width: 640px) {
+    gap: 16px;
+    grid-template-columns: minmax(0, 1fr);
   }
 `;
 
-export const ProjectsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 100%;
+export const ProjectCardWrapper = styled.a`
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
 
-  img {
-    max-width: 100%;
-    border-radius: 10px;
-
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-      transform: scale(1.02);
-    }
+  & img {
+    display: block;
+    width: 100%;
   }
 
-  @media (max-width: 640px) {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  &:hover,
+  &:focus-visible {
+    transform: scale(1.02);
   }
 `;

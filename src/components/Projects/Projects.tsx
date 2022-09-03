@@ -1,23 +1,48 @@
 import React from "react";
-import { ProjectsGrid, ProjectsWrapper } from "./styles";
+import ProjectCard from "./ProjectCard";
+import { ProjectsWrapper, Header, Title, ProjectsGrid } from "./styles";
+
+export interface Project {
+  title: string;
+  thumbnail: string;
+  link: string;
+}
+
+const projects: Project[] = [
+  {
+    title: "Quizical",
+    thumbnail: "/images/quizical.png",
+    link: "https://quizzical-swart.vercel.app",
+  },
+  {
+    title: "Froggy",
+    thumbnail: "/images/froggy.png",
+    link: "https://froggy-game.vercel.app",
+  },
+  {
+    title: "Meme Generator",
+    thumbnail: "/images/memegenerator.png",
+    link: "https://meme-generator.mariody.vercel.app",
+  },
+  {
+    title: "Weather App",
+    thumbnail: "/images/weather-app.png",
+    link: "https://weather.mariody.vercel.app",
+  },
+];
 
 const Projects: React.FC = () => {
   return (
-    <ProjectsWrapper id="my-projects">
-      <h2>My projects</h2>
+    <ProjectsWrapper id="projects">
+      <Header>
+        <Title>Recent Projects 👾</Title>
+      </Header>
       <ProjectsGrid>
-        <a href="https://quizzical-swart.vercel.app/">
-          <img src="./images/quizical.png" alt="" />
-        </a>
-        <a href="https://froggy-game.vercel.app/">
-          <img src="./images/froggy.png" alt="" />
-        </a>
-        <a href="https://meme-generator.mariody.vercel.app/">
-          <img src="./images/memegenerator.png" alt="" />
-        </a>
-        <a href="https://weather.mariody.vercel.app/">
-          <img src="./images/weather-app.png" alt="" />
-        </a>
+        {projects.map((project) => (
+          <li key={project.title}>
+            <ProjectCard project={project} />
+          </li>
+        ))}
       </ProjectsGrid>
     </ProjectsWrapper>
   );

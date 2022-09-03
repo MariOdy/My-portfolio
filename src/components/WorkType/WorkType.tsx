@@ -53,7 +53,7 @@ const layers = [{ image: "/images/parallax.png", speed: -25 }];
 
 const WorkType: React.FC = () => {
   return (
-    <WorkTypeWrapper id="work-types">
+    <WorkTypeWrapper id="skills">
       <ParallaxBanner layers={layers} className="parallax-banner">
         <Content>
           <h2>Things I love</h2>

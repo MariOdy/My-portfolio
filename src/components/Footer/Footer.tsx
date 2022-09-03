@@ -18,9 +18,9 @@ const Footer: React.FC = () => {
           <h2>Mariia Odynska.</h2>
           <h4>Frontend Developer from Ukraine</h4>
           <Links>
-            <a href="#my-projects">Projects</a>
-            <a href="#about-me">About me</a>
-            <a href="#work-types">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About me</a>
+            <a href="#skills">Skills</a>
           </Links>
           <Email>mariody.work@gmail.com</Email>
           <Socials>

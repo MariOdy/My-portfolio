@@ -7,10 +7,6 @@ const bounceXMobile = keyframes` from { left: 0; } to { left: calc(100% - 80px);
 const bounceYMobile = keyframes`from { top: 0; } to { top: calc(100% - 44.75px); }`;
 
 export const Banner = styled(SectionCard)`
-  border-radius: 10px;
-  background-color: rgba(6, 95, 82, 0.5);
-
-  color: #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,14 +19,12 @@ export const Banner = styled(SectionCard)`
     position: relative;
     z-index: 1;
   }
-
   img {
     max-width: 250px;
   }
   & h3 {
     font-size: 20px;
     font-weight: 600;
-    color: #ffaf66;
     margin: 0.4em auto;
     transition: color 0.2s ease;
     width: fit-content;
@@ -55,7 +49,7 @@ export const Banner = styled(SectionCard)`
     display: block;
     color: #000000;
     position: absolute;
-    transition: opacity 0.5s ease;
+    transition: color 0.2s ease;
     z-index: 0;
     --x-time: 8.5s;
     --y-time: 10.1s;
@@ -72,13 +66,13 @@ export const Banner = styled(SectionCard)`
     & svg {
       height: auto;
       width: 100%;
-      color: #000000;
     }
   }
   &:hover,
   &:focus {
-    & h3 {
-      color: #000000;
+    & h3,
+    & .bouncer {
+      color: #ff7f3e;
     }
   }
 `;

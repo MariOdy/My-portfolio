@@ -3,9 +3,13 @@ import styled from "styled-components";
 export const SectionCard = styled.section`
   background-color: #ccdaeb;
   border-radius: 16px;
-  margin-top: 12px;
+  margin: 64px 0;
   padding: 32px 48px;
   position: relative;
+
+  @media (max-width: 780px) {
+    margin: 32px 0;
+  }
 
   @media (max-width: 640px) {
     padding: 32px 24px;

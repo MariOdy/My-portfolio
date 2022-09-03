@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { SectionCard } from "components/SectionCard";
 
 export const WorkTypeWrapper = styled(SectionCard)`
-  margin-top: 75px;
   padding: 0;
   position: relative;
   overflow: hidden;

@@ -6,7 +6,7 @@ export const AboutMeWrapper = styled(SectionCard)`
   display: flex;
   justify-content: space-between;
   gap: 24px;
-  margin-top: 64px;
+  margin: 64px 0;
 
   background-color: #cbdaeb;
   background-image: url("/images/wiggle.svg");
@@ -14,6 +14,7 @@ export const AboutMeWrapper = styled(SectionCard)`
 
   @media (max-width: 780px) {
     flex-direction: column;
+    margin: 32px 0;
     text-align: center;
   }
 `;
