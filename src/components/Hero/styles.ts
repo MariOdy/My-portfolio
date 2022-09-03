@@ -22,14 +22,14 @@ export const Content = styled.div`
 export const Title = styled.h1`
   font-size: clamp(28px, 6vw, 60px);
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 `;
 
 export const Description = styled.p`
   font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   max-width: 472px;
 
   @media (max-width: 640px) {
