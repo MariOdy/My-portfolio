@@ -7,6 +7,7 @@ export const BaseButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 4px;
   border: none;
   outline: none;
   background: transparent;
@@ -27,6 +28,11 @@ export const SolidButton = styled(BaseButton)`
   font-weight: 400;
   font-size: 18px;
   color: #ffffff;
+
+  & svg {
+    height: 24px;
+    width: 24px;
+  }
 `;
 
 export const TransparentButton = styled(BaseButton)`

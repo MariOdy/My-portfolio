@@ -53,6 +53,11 @@ a {
   text-decoration: none;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 ul {
   list-style: none;
 }

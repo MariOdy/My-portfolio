@@ -1,19 +1,23 @@
 import React from "react";
-import { Wrapper, ThumbnailLink, Thumbnail, Content, Title } from "./styles";
+import Instagram from "components/buttons/Instagram";
+import Slider from "./Slider";
+import { Wrapper, Content, Title, Description } from "./styles";
 
 const InstaPromo: React.FC = () => {
   return (
     <Wrapper>
-      <ThumbnailLink
-        href="https://www.instagram.com/just.tendril/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Thumbnail src="/images/3d-render.jpeg" alt="" />
-      </ThumbnailLink>
+      <Slider />
 
       <Content>
-        <Title>Checkout My 3d Works</Title>
+        <Title>Checkout My Awesome 3d Works 🔥</Title>
+        <Description>
+          In free time I Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Proin aliquet turpis in leo pharetra, vel maximus nisl faucibus.
+          Quisque eget elit a sapien tempor posuere eget eu ipsum. Donec
+          tincidunt tellus nec efficitur aliquam. In vehicula lobortis rhoncus.
+          Curabitur convallis arcu erat, eget maximus ante convallis ac
+        </Description>
+        <Instagram />
       </Content>
     </Wrapper>
   );
