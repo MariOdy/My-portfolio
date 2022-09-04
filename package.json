@@ -5,6 +5,20 @@
   "license": "MIT",
   "repository": "https://github.com/MariOdy/My-portfolio.git",
   "author": "Marii Odynska <mvasylenko21@gmail.com>",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "prettier": "prettier --write .",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix",
+    "fix": "yarn prettier && yarn lint-fix",
+    "pre-commit": "yarn lint && lint-staged"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "pretty-quick --staged"
+    ]
+  },
   "dependencies": {
     "keen-slider": "^6.7.0",
     "react": "^18.2.0",
@@ -24,20 +38,11 @@
     "@typescript-eslint/parser": "^5.36.1",
     "eslint": "^8.23.0",
     "eslint-plugin-react": "^7.31.5",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
+    "pretty-quick": "^3.1.3",
     "typescript": "^4.8.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "prettier": "yarn prettier --write .",
-    "eslint": "eslint ."
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
