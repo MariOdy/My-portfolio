@@ -20,7 +20,7 @@ export const Content = styled.div`
 
 export const Title = styled.h4`
   font-size: 32px;
-  max-width: 320px;
+  max-width: 380px;
   margin-bottom: 16px;
 `;
 
@@ -29,10 +29,14 @@ export const Description = styled.p`
   margin-bottom: 24px;
 `;
 
+export const SliderColumn = styled.div`
+  flex: 1 0;
+`;
+
 export const SliderWrapper = styled.div`
   overflow: hidden;
   position: relative;
-  flex: 1 0;
+  width: fit-content;
 
   & .keen-slider {
     max-width: 100%;
