@@ -5,19 +5,32 @@ export const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
   gap: 12px;
+  padding: 24px 0;
 
-  background-color: black;
+  background-color: #07060a;
   color: #a9a9a9;
 
   > div {
     display: flex;
   }
+`;
+
+export const Title = styled.h4`
+  color: white;
+  font-size: 40px;
 
   @media (max-width: 640px) {
-    text-align: center;
-    p {
-      width: 100%;
-    }
+    font-size: 24px;
+  }
+`;
+
+export const Description = styled.p`
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 20px;
+
+  @media (max-width: 640px) {
+    font-size: 14px;
   }
 `;
 
@@ -26,8 +39,10 @@ export const ContactsImg = styled.div`
   justify-content: center;
   flex: 1;
   padding: 12px;
-  img {
+
+  & img {
     max-width: 100%;
+    object-fit: contain;
   }
 
   @media (max-width: 640px) {
@@ -47,24 +62,8 @@ export const ContactsInfo = styled.div`
 
   gap: 20px;
 
-  h2 {
-    font-size: 40px;
-  }
-  h4 {
-    font-size: 16px;
-    font-weight: 200;
-    margin-top: -20px;
-    margin-bottom: 20px;
-  }
-
   @media (max-width: 640px) {
     align-items: center;
-    h2 {
-      font-size: 32px;
-    }
-    h4 {
-      font-size: 14px;
-    }
   }
 `;
 

@@ -1,6 +1,4 @@
 import React from "react";
-import Resume from "components/buttons/Resume";
-import { ContactsImg, ContactsInfo, Links, Socials, Email } from "./styles";
 import {
   BsFacebook,
   BsInstagram,
@@ -8,15 +6,25 @@ import {
   BsTelegram,
 } from "react-icons/bs";
 import { Container } from "components/Container";
-import { FooterWrapper } from "./styles";
+import Resume from "components/buttons/Resume";
+import {
+  FooterWrapper,
+  Title,
+  Description,
+  ContactsImg,
+  ContactsInfo,
+  Links,
+  Socials,
+  Email,
+} from "./styles";
 
 const Footer: React.FC = () => {
   return (
     <FooterWrapper>
       <Container>
         <ContactsInfo>
-          <h2>Mariia Odynska.</h2>
-          <h4>Frontend Developer from Ukraine</h4>
+          <Title>Mariia Odynska.</Title>
+          <Description>Frontend Developer from Ukraine</Description>
           <Links>
             <a href="#projects">Projects</a>
             <a href="#about">About me</a>
