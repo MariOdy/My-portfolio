@@ -78,6 +78,9 @@ export const Links = styled.div`
   a:hover {
     text-decoration-line: underline;
   }
+  @media (max-width: 640px) {
+    text-align: center;
+  }
 `;
 
 export const Email = styled.a`

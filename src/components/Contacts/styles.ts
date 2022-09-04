@@ -35,6 +35,16 @@ export const ContactsWrapper = styled(SectionCard)`
   > div .mail {
     background-color: #393939;
   }
+
+  @media (max-width: 640px) {
+    p {
+      width: 110%;
+      text-align: center;
+    }
+    > div {
+      width: 100%;
+    }
+  }
 `;
 
 export const ContactCard = styled.a`
@@ -50,6 +60,12 @@ export const ContactCard = styled.a`
 
   background-color: #4785ff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
   h3 {
     font-size: 20px;
     font-weight: 500;
@@ -60,5 +76,12 @@ export const ContactCard = styled.a`
     width: 100px;
     height: 100px;
     color: #ffffff;
+  }
+  @media (max-width: 640px) {
+    height: 130px;
+    svg {
+      width: 50px;
+      height: 50px;
+    }
   }
 `;
