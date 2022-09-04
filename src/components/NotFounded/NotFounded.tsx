@@ -13,27 +13,25 @@ const DvdLogo = () => (
   </svg>
 );
 
-const NotFounded: React.FC = () => {
-  return (
-    <section>
-      <Header />
-      <NotFoundedWrapper>
-        <span className="bouncer">
-          <DvdLogo />
-        </span>
-        <NotFoundedInfo>
-          <p>
-            Oops..
-            <br />
-            This page doesn&apos;t exist
-          </p>
-          <Link to="/" className="go-back">
-            Go back
-          </Link>
-        </NotFoundedInfo>
-      </NotFoundedWrapper>
-    </section>
-  );
-};
+const NotFounded: React.FC = () => (
+  <section>
+    <Header />
+    <NotFoundedWrapper>
+      <span className="bouncer">
+        <DvdLogo />
+      </span>
+      <NotFoundedInfo>
+        <p>
+          Oops..
+          <br />
+          This page doesn&apos;t exist
+        </p>
+        <Link to="/" className="go-back">
+          Go back
+        </Link>
+      </NotFoundedInfo>
+    </NotFoundedWrapper>
+  </section>
+);
 
 export default NotFounded;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LinkIcon = styled.a`
+const LinkIcon = styled.a`
   --icon-size: 30px;
 
   align-items: center;
@@ -27,3 +27,5 @@ export const LinkIcon = styled.a`
     width: var(--icon-size);
   }
 `;
+
+export default LinkIcon;

@@ -1,4 +1,4 @@
-import { SectionCard } from "components/SectionCard";
+import SectionCard from "components/SectionCard";
 import styled from "styled-components";
 
 export const ContactsWrapper = styled(SectionCard)`

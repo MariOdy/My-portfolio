@@ -31,21 +31,19 @@ const projects: Project[] = [
   },
 ];
 
-const Projects: React.FC = () => {
-  return (
-    <ProjectsWrapper id="projects">
-      <Header>
-        <Title>Recent Projects 👾</Title>
-      </Header>
-      <ProjectsGrid>
-        {projects.map((project) => (
-          <li key={project.title}>
-            <ProjectCard project={project} />
-          </li>
-        ))}
-      </ProjectsGrid>
-    </ProjectsWrapper>
-  );
-};
+const Projects: React.FC = () => (
+  <ProjectsWrapper id="projects">
+    <Header>
+      <Title>Recent Projects 👾</Title>
+    </Header>
+    <ProjectsGrid>
+      {projects.map((project) => (
+        <li key={project.title}>
+          <ProjectCard project={project} />
+        </li>
+      ))}
+    </ProjectsGrid>
+  </ProjectsWrapper>
+);
 
 export default Projects;

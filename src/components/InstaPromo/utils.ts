@@ -1,6 +1,6 @@
 import type { KeenSliderPlugin } from "keen-slider";
 
-export const autoSlideMod: KeenSliderPlugin = (slider) => {
+const autoSlideMod: KeenSliderPlugin = (slider) => {
   let timeout: ReturnType<typeof setTimeout>;
   let mouseOver = false;
   const clearNextTimeout = () => clearTimeout(timeout);
@@ -26,3 +26,5 @@ export const autoSlideMod: KeenSliderPlugin = (slider) => {
   slider.on("animationEnded", nextTimeout);
   slider.on("updated", nextTimeout);
 };
+
+export default autoSlideMod;

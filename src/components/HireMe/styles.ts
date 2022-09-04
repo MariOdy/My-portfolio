@@ -1,12 +1,12 @@
 import styled, { keyframes } from "styled-components";
-import { SectionCard } from "components/SectionCard";
+import SectionCard from "components/SectionCard";
 
 const bounceX = keyframes` from { left: 0; } to { left: calc(100% - 112px); }`;
 const bounceY = keyframes`from { top: 0; } to { top: calc(100% - 61.06px); }`;
 const bounceXMobile = keyframes` from { left: 0; } to { left: calc(100% - 80px); }`;
 const bounceYMobile = keyframes`from { top: 0; } to { top: calc(100% - 44.75px); }`;
 
-export const Banner = styled(SectionCard)`
+const Banner = styled(SectionCard)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,3 +76,5 @@ export const Banner = styled(SectionCard)`
     }
   }
 `;
+
+export default Banner;

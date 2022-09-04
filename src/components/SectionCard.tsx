@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionCard = styled.section`
+const SectionCard = styled.section`
   background-color: #ccdaeb;
   border-radius: 16px;
   margin: 64px 0;
@@ -19,3 +19,5 @@ export const SectionCard = styled.section`
     padding: 32px 20px;
   }
 `;
+
+export default SectionCard;

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { Banner } from "./styles";
+import Banner from "./styles";
 
 const DvdLogo = () => (
   <svg
@@ -12,7 +12,7 @@ const DvdLogo = () => (
   </svg>
 );
 
-export const HireMeBanner: React.FC = () => (
+const HireMeBanner: React.FC = () => (
   <Banner as={Link} to="/">
     <span className="bouncer">
       <DvdLogo />
@@ -33,3 +33,5 @@ export const HireMeBanner: React.FC = () => (
     </div>
   </Banner>
 );
+
+export default HireMeBanner;

@@ -5,7 +5,7 @@ import Arrow from "./Arrow";
 import { SliderWrapper, Dots, Dot } from "./styles";
 
 import { slides } from "./slides";
-import { autoSlideMod } from "./utils";
+import autoSlideMod from "./utils";
 
 import "keen-slider/keen-slider.min.css";
 

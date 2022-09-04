@@ -51,21 +51,19 @@ const WorkTypeCard: React.FC<WorkTypeCardProps> = ({ type }) => {
 
 const layers = [{ image: "/images/parallax.png", speed: -25 }];
 
-const WorkType: React.FC = () => {
-  return (
-    <WorkTypeWrapper id="skills">
-      <ParallaxBanner layers={layers} className="parallax-banner">
-        <Content>
-          <h2>Things I love</h2>
-          <Cards>
-            {types.map((type) => (
-              <WorkTypeCard type={type} key={type.id} />
-            ))}
-          </Cards>
-        </Content>
-      </ParallaxBanner>
-    </WorkTypeWrapper>
-  );
-};
+const WorkType: React.FC = () => (
+  <WorkTypeWrapper id="skills">
+    <ParallaxBanner layers={layers} className="parallax-banner">
+      <Content>
+        <h2>Things I love</h2>
+        <Cards>
+          {types.map((type) => (
+            <WorkTypeCard type={type} key={type.id} />
+          ))}
+        </Cards>
+      </Content>
+    </ParallaxBanner>
+  </WorkTypeWrapper>
+);
 
 export default WorkType;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SectionCard } from "components/SectionCard";
+import SectionCard from "components/SectionCard";
 
 export const AboutMeWrapper = styled(SectionCard)`
   align-items: center;

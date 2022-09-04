@@ -1,31 +1,6 @@
 import * as React from "react";
 import styled, { keyframes } from "styled-components";
 
-export const BubblesBackground: React.FC = () => (
-  <Container className="bubblesWrapper">
-    <Bubble left="65%" />
-    <Bubble left="25%" size="80px" />
-    <Bubble left="70%" animationDelay="4s" />
-    <Bubble left="10%" animationDelay="2s" animationDuration="12s" />
-    <Bubble left="75%" size="110px" animationDelay="3s" />
-    <Bubble left="35%" size="150px" animationDelay="7s" />
-    <Bubble left="40%" size="60px" animationDuration="18s" />
-    <Bubble left="85%" size="150px" animationDuration="11s" />
-    <Bubble
-      left="20%"
-      size="15px"
-      animationDelay="2s"
-      animationDuration="35s"
-    />
-    <Bubble
-      left="50%"
-      size="25px"
-      animationDelay="15s"
-      animationDuration="45s"
-    />
-  </Container>
-);
-
 const Flow = keyframes`
     from {
       border-radius: 0;
@@ -77,3 +52,30 @@ const Bubble = styled(BubbleBase)<BubbleProps>`
   ${({ left }) => left && `left: ${left};`}
   ${({ size }) => size && `height: ${size}; width: ${size};`}
 `;
+
+const BubblesBackground: React.FC = () => (
+  <Container className="bubblesWrapper">
+    <Bubble left="65%" />
+    <Bubble left="25%" size="80px" />
+    <Bubble left="70%" animationDelay="4s" />
+    <Bubble left="10%" animationDelay="2s" animationDuration="12s" />
+    <Bubble left="75%" size="110px" animationDelay="3s" />
+    <Bubble left="35%" size="150px" animationDelay="7s" />
+    <Bubble left="40%" size="60px" animationDuration="18s" />
+    <Bubble left="85%" size="150px" animationDuration="11s" />
+    <Bubble
+      left="20%"
+      size="15px"
+      animationDelay="2s"
+      animationDuration="35s"
+    />
+    <Bubble
+      left="50%"
+      size="25px"
+      animationDelay="15s"
+      animationDuration="45s"
+    />
+  </Container>
+);
+
+export default BubblesBackground;
