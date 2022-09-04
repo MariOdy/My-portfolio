@@ -17,6 +17,7 @@ import {
   Socials,
   Email,
 } from "./styles";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -26,11 +27,17 @@ const Footer: React.FC = () => {
           <Title>Mariia Odynska.</Title>
           <Description>Frontend Developer from Ukraine</Description>
           <Links>
-            <a href="#projects">Projects</a>
-            <a href="#about">About me</a>
-            <a href="#skills">Skills</a>
+            <Link to="/#projects">Projects</Link>
+            <Link to="/#about">About me</Link>
+            <Link to="/#skills">Skills</Link>
           </Links>
-          <Email>mariody.work@gmail.com</Email>
+          <Email
+            href="mailto:mariody.work@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            mariody.work@gmail.com
+          </Email>
           <Socials>
             <a
               href="https://www.linkedin.com/in/mariody/"

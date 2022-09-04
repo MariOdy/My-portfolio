@@ -12,8 +12,8 @@ const App: React.FC = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="*" element={<NotFounded />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="*" element={<NotFounded />} />
         </Routes>
       </BrowserRouter>
     </ParallaxProvider>

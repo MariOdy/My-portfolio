@@ -80,9 +80,8 @@ export const Links = styled.div`
   }
 `;
 
-export const Email = styled.div`
+export const Email = styled.a`
   font-weight: 400;
-  cursor: default;
 `;
 
 export const Socials = styled.div`
