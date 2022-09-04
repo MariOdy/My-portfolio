@@ -12,9 +12,7 @@ const DvdLogo = () => (
   </svg>
 );
 
-interface HireMeBannerProps {}
-
-export const HireMeBanner: React.FC<HireMeBannerProps> = () => (
+export const HireMeBanner: React.FC = () => (
   <Banner as={Link} to="/">
     <span className="bouncer">
       <DvdLogo />

@@ -25,7 +25,7 @@ const NotFounded: React.FC = () => {
           <p>
             Oops..
             <br />
-            This page doesn't exist
+            This page doesn&apos;t exist
           </p>
           <Link to="/" className="go-back">
             Go back

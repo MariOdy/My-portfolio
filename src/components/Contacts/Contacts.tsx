@@ -10,10 +10,10 @@ const Contacts: React.FC = () => {
     <>
       <Header />
       <ContactsWrapper as="section">
-        <h2>Let's talk!</h2>
+        <h2>Let&apos;s talk!</h2>
         <p>
-          Write to me about anything! I'm always happy to answer and provide you
-          my professional help.
+          Write to me about anything! I&apos;m always happy to answer and
+          provide you my professional help.
         </p>
         <div>
           <ContactCard

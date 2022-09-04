@@ -12,7 +12,7 @@ const AboutMe: React.FC = () => (
     <AboutInfo>
       <Title>About me ⭐️</Title>
       <Description>
-        I'm a passionate Web Developer and 3D Artist. I create{" "}
+        I&apos;m a passionate Web Developer and 3D Artist. I create{" "}
         <span>Pretty</span> Web Apps and Components, using modern CSS,
         accessible HTML and Next.js
       </Description>

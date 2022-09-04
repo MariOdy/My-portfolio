@@ -2,6 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "repository": "https://github.com/MariOdy/My-portfolio.git",
+  "author": "Marii Odynska <mvasylenko21@gmail.com>",
   "dependencies": {
     "keen-slider": "^6.7.0",
     "react": "^18.2.0",
@@ -17,13 +20,18 @@
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
     "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "^8.23.0",
+    "eslint-plugin-react": "^7.31.5",
     "prettier": "2.7.1",
     "typescript": "^4.8.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "prettier": "yarn prettier --write ."
+    "prettier": "yarn prettier --write .",
+    "eslint": "eslint ."
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +50,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js"
 }
