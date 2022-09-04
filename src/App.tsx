@@ -4,6 +4,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 import NotFounded from "components/NotFounded/NotFounded";
 import HomePage from "pages/HomePage";
+import Contacts from "components/Contacts/Contacts";
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="*" element={<NotFounded />} />
+          <Route path="/contacts" element={<Contacts />} />
         </Routes>
       </BrowserRouter>
     </ParallaxProvider>
