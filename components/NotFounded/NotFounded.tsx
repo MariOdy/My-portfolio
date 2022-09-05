@@ -28,8 +28,8 @@ const NotFounded: React.FC = () => (
           <br />
           This page doesn&apos;t exist
         </p>
-        <Link href="/">
-          <a className="go-back">Go back</a>
+        <Link href="/" className="go-back">
+          Go back
         </Link>
       </NotFoundedInfo>
     </NotFoundedWrapper>

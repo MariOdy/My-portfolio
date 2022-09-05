@@ -7,9 +7,7 @@ const Header: React.FC = () => (
   <header>
     <HeaderWrapper>
       <h2>
-        <Logo href="/">
-          <a>Mariia Odynska.</a>
-        </Logo>
+        <Logo href="/">Mariia Odynska.</Logo>
       </h2>
       <LinkIcon
         href="https://github.com/MariOdy"

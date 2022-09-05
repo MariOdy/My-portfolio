@@ -26,15 +26,9 @@ const Footer: React.FC = () => (
         <Title>Mariia Odynska.</Title>
         <Description>Frontend Developer from Ukraine</Description>
         <Links>
-          <Link href="/#projects">
-            <a>Projects</a>
-          </Link>
-          <Link href="/#about">
-            <a> About me</a>
-          </Link>
-          <Link href="/#skills">
-            <a>Skills</a>
-          </Link>
+          <Link href="/#projects">Projects</Link>
+          <Link href="/#about">About me</Link>
+          <Link href="/#skills">Skills</Link>
         </Links>
         <Email
           href="mailto:mariody.work@gmail.com"
