@@ -7,7 +7,7 @@ import {
 } from "react-icons/bs";
 import Container from "components/Container";
 import Resume from "components/buttons/Resume";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import {
   FooterWrapper,
   Title,
@@ -26,9 +26,15 @@ const Footer: React.FC = () => (
         <Title>Mariia Odynska.</Title>
         <Description>Frontend Developer from Ukraine</Description>
         <Links>
-          <Link to="/#projects">Projects</Link>
-          <Link to="/#about">About me</Link>
-          <Link to="/#skills">Skills</Link>
+          <Link href="/#projects">
+            <a>Projects</a>
+          </Link>
+          <Link href="/#about">
+            <a> About me</a>
+          </Link>
+          <Link href="/#skills">
+            <a>Skills</a>
+          </Link>
         </Links>
         <Email
           href="mailto:mariody.work@gmail.com"
