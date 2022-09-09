@@ -10,6 +10,11 @@ export interface Project {
 
 const projects: Project[] = [
   {
+    title: "Currency Exchange",
+    thumbnail: "/images/currency-exchange.png",
+    link: "https://reexchanger.mariody.vercel.app",
+  },
+  {
     title: "Quizical",
     thumbnail: "/images/quizical.png",
     link: "https://quizzical-swart.vercel.app",
@@ -28,11 +33,6 @@ const projects: Project[] = [
     title: "Weather App",
     thumbnail: "/images/weather-app.png",
     link: "https://weather.mariody.vercel.app",
-  },
-  {
-    title: "Currency Exchange",
-    thumbnail: "/images/currency-exchange.png",
-    link: "https://reexchanger.mariody.vercel.app",
   },
 ];
 
