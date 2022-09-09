@@ -29,6 +29,11 @@ const projects: Project[] = [
     thumbnail: "/images/weather-app.png",
     link: "https://weather.mariody.vercel.app",
   },
+  {
+    title: "Currency Exchange",
+    thumbnail: "/images/currency-exchange.png",
+    link: "https://reexchanger.mariody.vercel.app",
+  },
 ];
 
 const Projects: React.FC = () => (
