@@ -1,5 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Banner from "./styles";
 
 function DvdLogo() {
@@ -15,13 +16,13 @@ function DvdLogo() {
 }
 
 const HireMeBanner: React.FC = () => (
-  <Link href="/" passHref>
+  <Link href="/contact" passHref>
     <Banner as="a">
       <span className="bouncer">
         <DvdLogo />
       </span>
       <div>
-        <img
+        <Image
           // Illustration from 'Ginger cat' by Icons8: https://icons8.ru/illustrations/illustration/ginger-cat-721
           src="./images/ginger-cat-help-center.png"
           alt="Ginger cat sitting on a computer by Icons8"
