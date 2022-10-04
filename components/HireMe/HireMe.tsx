@@ -1,6 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import Banner from "./styles";
 
 function DvdLogo() {
@@ -22,7 +21,7 @@ const HireMeBanner: React.FC = () => (
         <DvdLogo />
       </span>
       <div>
-        <Image
+        <img
           // Illustration from 'Ginger cat' by Icons8: https://icons8.ru/illustrations/illustration/ginger-cat-721
           src="./images/ginger-cat-help-center.png"
           alt="Ginger cat sitting on a computer by Icons8"
