@@ -39,6 +39,8 @@ export const ProjectCardWrapper = styled.a`
 
   & img {
     display: block;
+    height: auto;
+    min-height: 100%;
     width: 100%;
   }
 
