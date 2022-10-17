@@ -1,38 +1,51 @@
 import React from "react";
+
+import FoggyClock from "public/images/foggy-clock.png";
+import CurrencyExchange from "public/images/currency-exchange.png";
+import Quizical from "public/images/quizical.png";
+import Froggy from "public/images/froggy.png";
+import MemeGenerator from "public/images/memegenerator.png";
+import WeatherApp from "public//images/weather-app.png";
+
 import ProjectCard from "./ProjectCard";
 import { ProjectsWrapper, Header, Title, ProjectsGrid } from "./styles";
 
 export interface Project {
   title: string;
-  thumbnail: string;
+  thumbnail: any;
   link: string;
 }
 
 const projects: Project[] = [
   {
+    title: "Foggy Clock",
+    thumbnail: FoggyClock,
+    link: "https://foggy-clock.vercel.app",
+  },
+  {
     title: "Currency Exchange",
-    thumbnail: "/images/currency-exchange.png",
+    thumbnail: CurrencyExchange,
     link: "https://reexchanger.mariody.vercel.app",
   },
   {
     title: "Quizical",
-    thumbnail: "/images/quizical.png",
+    thumbnail: Quizical,
     link: "https://quizzical-swart.vercel.app",
   },
   {
-    title: "Froggy",
-    thumbnail: "/images/froggy.png",
-    link: "https://froggy-game.vercel.app",
+    title: "Weather App",
+    thumbnail: WeatherApp,
+    link: "https://weather.mariody.vercel.app",
   },
   {
     title: "Meme Generator",
-    thumbnail: "/images/memegenerator.png",
+    thumbnail: MemeGenerator,
     link: "https://meme-generator.mariody.vercel.app",
   },
   {
-    title: "Weather App",
-    thumbnail: "/images/weather-app.png",
-    link: "https://weather.mariody.vercel.app",
+    title: "Froggy",
+    thumbnail: Froggy,
+    link: "https://froggy-game.vercel.app",
   },
 ];
 
