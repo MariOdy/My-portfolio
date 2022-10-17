@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
   display: flex;
   gap: 24px 48px;
   margin: 64px 0;
+  width: 100%;
 
   @media (max-width: 780px) {
     flex-direction: column-reverse;
@@ -31,6 +32,10 @@ export const Description = styled.p`
 
 export const SliderColumn = styled.div`
   flex: 1 0;
+
+  @media (max-width: 780px) {
+    width: 100%;
+  }
 `;
 
 export const SliderWrapper = styled.div`
@@ -44,6 +49,14 @@ export const SliderWrapper = styled.div`
 
     border-radius: 20px;
     overflow: hidden;
+  }
+
+  @media (max-width: 780px) {
+    width: 100%;
+
+    & .keen-slider {
+      width: 100%;
+    }
   }
 `;
 
