@@ -6,6 +6,7 @@ import Quizical from "public/images/quizical.png";
 import Froggy from "public/images/froggy.png";
 import MemeGenerator from "public/images/memegenerator.png";
 import WeatherApp from "public//images/weather-app.png";
+import CryptoKitties from "public//images/cryptokitties.png";
 
 import ProjectCard from "./ProjectCard";
 import { ProjectsWrapper, Header, Title, ProjectsGrid } from "./styles";
@@ -17,6 +18,11 @@ export interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: "CryptoKitties",
+    thumbnail: CryptoKitties,
+    link: "https://crypto-kitties.mariody.vercel.app/",
+  },
   {
     title: "Foggy Clock",
     thumbnail: FoggyClock,
