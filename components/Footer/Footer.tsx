@@ -38,30 +38,30 @@ const Footer: React.FC = () => (
           mariody.work@gmail.com
         </Email>
         <Socials>
-          <a
+          <Link
             href="https://www.linkedin.com/in/mariody/"
             target="_blank"
             rel="noreferrer"
           >
             <BsLinkedin />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.facebook.com/profile.php?id=100034116007528"
             target="_blank"
             rel="noreferrer"
           >
             <BsFacebook />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://instagram.com/just.tendril?igshid=YmMyMTA2M2Y="
             target="_blank"
             rel="noreferrer"
           >
             <BsInstagram />
-          </a>
-          <a href="https://t.me/Mari_ody" target="_blank" rel="noreferrer">
+          </Link>
+          <Link href="https://t.me/Mari_ody" target="_blank" rel="noreferrer">
             <BsTelegram />
-          </a>
+          </Link>
         </Socials>
         <Resume />
       </ContactsInfo>
