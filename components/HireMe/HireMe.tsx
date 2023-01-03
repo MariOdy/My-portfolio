@@ -15,27 +15,25 @@ function DvdLogo() {
 }
 
 const HireMeBanner: React.FC = () => (
-  <Link href="/contact" passHref>
-    <Banner as="a">
-      <span className="bouncer">
-        <DvdLogo />
-      </span>
-      <div>
-        <img
-          // Illustration from 'Ginger cat' by Icons8: https://icons8.ru/illustrations/illustration/ginger-cat-721
-          src="./images/ginger-cat-help-center.png"
-          alt="Ginger cat sitting on a computer by Icons8"
-        />
-        <div className="hire-me-text">
-          <h3>Pssst! Need a coder?</h3>
-          <p>
-            Let&apos;s work together! Tell me about your idea and I&apos;ll help
-            you to make it real and gorgeous the best way I know how.
-          </p>
-        </div>
+  <Banner as={Link} href="/contact">
+    <span className="bouncer">
+      <DvdLogo />
+    </span>
+    <div>
+      <img
+        // Illustration from 'Ginger cat' by Icons8: https://icons8.ru/illustrations/illustration/ginger-cat-721
+        src="./images/ginger-cat-help-center.png"
+        alt="Ginger cat sitting on a computer by Icons8"
+      />
+      <div className="hire-me-text">
+        <h3>Pssst! Need a coder?</h3>
+        <p>
+          Let&apos;s work together! Tell me about your idea and I&apos;ll help
+          you to make it real and gorgeous the best way I know how.
+        </p>
       </div>
-    </Banner>
-  </Link>
+    </div>
+  </Banner>
 );
 
 export default HireMeBanner;

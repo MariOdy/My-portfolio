@@ -6,7 +6,11 @@ const bounceY = keyframes`from { top: 0; } to { top: calc(100% - 61.06px); }`;
 const bounceXMobile = keyframes` from { left: 0; } to { left: calc(100% - 80px); }`;
 const bounceYMobile = keyframes`from { top: 0; } to { top: calc(100% - 44.75px); }`;
 
-const Banner = styled(SectionCard)`
+interface BannerProps {
+  as: any;
+}
+
+const Banner = styled(SectionCard)<BannerProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
