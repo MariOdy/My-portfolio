@@ -8,17 +8,23 @@ import MemeGenerator from "public/images/memegenerator.png";
 import WeatherApp from "public//images/weather-app.png";
 import CryptoKitties from "public//images/cryptokitties.png";
 import FortuneCookie from "public//images/fortune-cookie.png";
+import AmIOld from "public//images/am-i-old.png";
 
 import ProjectCard from "./ProjectCard";
 import { ProjectsWrapper, Header, Title, ProjectsGrid } from "./styles";
 
 export interface Project {
   title: string;
-  thumbnail: any;
+  thumbnail: unknown;
   link: string;
 }
 
 const projects: Project[] = [
+  {
+    title: "Am I Old?",
+    thumbnail: AmIOld,
+    link: "https://my-age.vercel.app/",
+  },
   {
     title: "FortuneCookie",
     thumbnail: FortuneCookie,
@@ -30,9 +36,9 @@ const projects: Project[] = [
     link: "https://crypto-kitties.mariody.vercel.app/",
   },
   {
-    title: "Foggy Clock",
-    thumbnail: FoggyClock,
-    link: "https://foggy-clock.vercel.app",
+    title: "Weather App",
+    thumbnail: WeatherApp,
+    link: "https://weather.mariody.vercel.app",
   },
   {
     title: "Currency Exchange",
@@ -45,10 +51,11 @@ const projects: Project[] = [
     link: "https://quizzical-swart.vercel.app",
   },
   {
-    title: "Weather App",
-    thumbnail: WeatherApp,
-    link: "https://weather.mariody.vercel.app",
+    title: "Foggy Clock",
+    thumbnail: FoggyClock,
+    link: "https://foggy-clock.vercel.app",
   },
+
   {
     title: "Meme Generator",
     thumbnail: MemeGenerator,
