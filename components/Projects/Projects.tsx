@@ -15,7 +15,7 @@ import { ProjectsWrapper, Header, Title, ProjectsGrid } from "./styles";
 
 export interface Project {
   title: string;
-  thumbnail: unknown;
+  thumbnail: any;
   link: string;
 }
 
