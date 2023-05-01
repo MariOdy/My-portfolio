@@ -9,6 +9,7 @@ import WeatherApp from "public//images/weather-app.png";
 import CryptoKitties from "public//images/cryptokitties.png";
 import FortuneCookie from "public//images/fortune-cookie.png";
 import AmIOld from "public//images/am-i-old.png";
+import Easybank from "public//images/easybank.png";
 
 import ProjectCard from "./ProjectCard";
 import { ProjectsWrapper, Header, Title, ProjectsGrid } from "./styles";
@@ -20,6 +21,11 @@ export interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: "Easybank landing page",
+    thumbnail: Easybank,
+    link: "https://easybank.mariody.vercel.app/",
+  },
   {
     title: "Am I Old?",
     thumbnail: AmIOld,
