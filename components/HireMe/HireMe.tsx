@@ -15,6 +15,7 @@ function DvdLogo() {
 }
 
 const HireMeBanner: React.FC = () => (
+  // @ts-expect-error: Shut up
   <Banner as={Link} href="/contact">
     <span className="bouncer">
       <DvdLogo />
