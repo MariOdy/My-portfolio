@@ -35,7 +35,7 @@ export const ProjectCardWrapper = styled.a`
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   display: block;
   transition: all 0.2s ease-in-out;
-  overflow: hidden;
+  position: relative;
 
   & img {
     display: block;
@@ -48,4 +48,19 @@ export const ProjectCardWrapper = styled.a`
   &:focus-visible {
     transform: scale(1.02);
   }
+`;
+
+export const NewProject = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff4e79;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  color: white;
 `;

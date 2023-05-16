@@ -10,6 +10,8 @@ import CryptoKitties from "public//images/cryptokitties.png";
 import FortuneCookie from "public//images/fortune-cookie.png";
 import AmIOld from "public//images/am-i-old.png";
 import Easybank from "public//images/easybank.png";
+import SunshineCakee from "public//images/sunshine-cakee.png";
+import Budu from "public//images/budu.png";
 
 import ProjectCard from "./ProjectCard";
 import { ProjectsWrapper, Header, Title, ProjectsGrid } from "./styles";
@@ -18,9 +20,22 @@ export interface Project {
   title: string;
   thumbnail: any;
   link: string;
+  newProject?: boolean | undefined;
 }
 
 const projects: Project[] = [
+  {
+    title: "BUDUBRAND page",
+    thumbnail: Budu,
+    link: "https://budubrand.vercel.app/",
+    newProject: true,
+  },
+  {
+    title: "Sunshine Cakee",
+    thumbnail: SunshineCakee,
+    link: "https://sunshine-cakee.vercel.app/",
+    newProject: true,
+  },
   {
     title: "Easybank landing page",
     thumbnail: Easybank,
