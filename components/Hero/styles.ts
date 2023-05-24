@@ -63,6 +63,7 @@ export const HeroImg = styled.img`
 
     object-position: left;
 
+    height: -webkit-fill-available;
     height: fill-available;
     width: auto;
   }
