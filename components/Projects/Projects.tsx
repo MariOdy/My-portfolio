@@ -12,6 +12,7 @@ import AmIOld from "public//images/am-i-old.png";
 import Easybank from "public//images/easybank.png";
 import SunshineCakee from "public//images/sunshine-cakee.png";
 import Budu from "public//images/budu.png";
+import CoffeeRoasters from "public//images/coffee-roasters.png";
 
 import ProjectCard from "./ProjectCard";
 import { ProjectsWrapper, Header, Title, ProjectsGrid } from "./styles";
@@ -24,6 +25,12 @@ export interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: "Coffee Roasters",
+    thumbnail: CoffeeRoasters,
+    link: "https://coffeeeroasters.vercel.app/",
+    newProject: true,
+  },
   {
     title: "BUDUBRAND page",
     thumbnail: Budu,
