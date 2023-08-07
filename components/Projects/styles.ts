@@ -42,6 +42,7 @@ export const ProjectCardWrapper = styled.a`
     height: auto;
     min-height: 100%;
     width: 100%;
+    border-radius: inherit;
   }
 
   &:hover,
