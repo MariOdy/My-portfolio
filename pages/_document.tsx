@@ -40,6 +40,8 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <WebPushScript />
+          <WebPushScript />
+          <script src="https://push.esputnik.com/service-worker.js" async />
         </Head>
         <body>
           <Main />
