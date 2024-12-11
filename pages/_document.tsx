@@ -1,3 +1,4 @@
+import WebPushScript from "components/Script/WebPushScript";
 import Document, {
   DocumentContext,
   Html,
@@ -38,6 +39,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
             rel="stylesheet"
           />
+          <WebPushScript />
         </Head>
         <body>
           <Main />
